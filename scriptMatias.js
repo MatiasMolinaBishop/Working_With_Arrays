@@ -146,3 +146,5 @@ movements.forEach((movement, index, array) => {
 ///////////////////////////////////////
 // forEach With Maps and Sets
 // Map
+
+//WHY NOT SHOWING?
