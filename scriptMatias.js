@@ -4,11 +4,11 @@
 /////////////////////////////////////////////////
 // LECTURES
 
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
+// const currencies = new Map([
+//   ['USD', 'United States dollar'],
+//   ['EUR', 'Euro'],
+//   ['GBP', 'Pound sterling'],
+// ]);
 
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -147,4 +147,27 @@ movements.forEach((movement, index, array) => {
 // forEach With Maps and Sets
 // Map
 
+// Maps are an array of arrays. The firs index on the inner arrays is the key and the second the value
+// We can also use forEach on maps. This will return value, key and map in that order
+
+const currencies = new Map([
+  ['USD', 'United States dollar'],
+  ['EUR', 'Euro'],
+  ['GBP', 'Pound sterling'],
+]);
+
+currencies.forEach((value, key) => console.log(`${key}: ${value}`));
+
+//Now lets try forEach with sets ---- Remember it only gets unique values
+//in this case its the same buut the key does not really apply. It ends up being the same as the value
+const currenciesSet = new Set([
+  'USD',
+  'United States dollar',
+  'EUR',
+  'Euro',
+  'USD',
+  'EUR',
+]);
+console.log('THIS IS THE SET:');
+currenciesSet.forEach((value, key) => console.log(`${key}: ${value}`));
 //WHY NOT SHOWING?
